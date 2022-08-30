@@ -1,0 +1,29 @@
+.d1{
+			background-image: url(image/1.gif);
+			background-repeat: repeat;
+			opacity: 0.7;
+			color: #EDEBF8;
+			position:absolute;left:420px;top:330px;
+			height:600px;
+			width: 768px;
+			line-height:40px;
+			padding-left: 40px;
+			}
+.d2{
+			font-size: 50px;
+		}
+.aek{
+			font-size: 20px;
+			color: white;
+		}
+.chosen-select{
+		height: 30px;
+		width: 100px;
+		border-radius: 4px;
+}
+#bacsave{
+	width: 80px;
+	height: 40px;
+	margin-top: 0px;
+	margin-left: 500px;
+}

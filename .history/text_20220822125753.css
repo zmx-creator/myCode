@@ -1,0 +1,53 @@
+/* <style> */
+.div_top{
+        width:484.578px;
+        height:24px;
+        float:right;
+        margin-top:10px;
+}
+.div_middle{
+        width:995px;
+        height:132px;
+        float:right;
+        margin-top:200px;
+      
+}
+.div_body{
+        width:100%;
+        height:59px;
+        float:left;
+}
+.div_bodyin{
+        width:640px;
+        height:36px;
+        float:right;
+        margin-top:23px;
+        margin-right:650px;
+}
+.div_tail{
+        width:100%;
+        height:120px;
+        float:right;
+        margin-top:250px;
+}
+.div_tail2{
+        width:100%;
+        height:22px;
+        float:right;
+        margin-top:10px;
+}
+.div_menu{
+        width:26.5156px;
+        height:24px;
+        float:left;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 24px;
+        color:#333;
+        margin-left:20;
+}
+.div_icon1{
+         margin-right:300px;              
+}
+
+/* </style> */

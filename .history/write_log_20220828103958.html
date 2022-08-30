@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>写日志</title>
+		<link type="text/css" rel="stylesheet" href="write_log.css"/>
+   
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+        <link href="./css/layout.css" rel="stylesheet">
+      
+        <script src="./js/custom-elem.js"></script>
+
+	</head>
+	<body background="image/1.gif">
+		<div class="div_top">
+			<div class="top_menu">
+				<div class="top_1"></div>
+				<div class="top_2" style="margin-left:10px;">
+					<i style=" background-position: -452px -52px;"></i>
+					<a class="a_top" href="home.html">个人中心</a>
+				</div>
+				<div class="top_2" style="width:101px;">
+					<i style=" background-position: -452px -104px;"></i>
+					<a class="a_top">我的主页</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -78px;"></i>
+					<a class="a_top">好友</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -78px;"></i>
+					<a class="a_top" href="set.html">设置</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -130px;"></i>
+					<a class="a_top">游戏</a>
+				</div>
+				<div class="top_2"   style="width:77px;">
+					<i  style=" background-position: -452px -156px;"></i>
+					<a class="a_top">装扮</a>
+				</div>
+
+				<div class="div_input">
+					<input type="text" placeholder="  用户/游戏/动态"/>
+				</div>
+				
+				<div class="img_info" >
+					<div class="imglogo">
+						<img style="width:24px;height:24px;border-radius: 2px;" src="image/2.jpg" alt="您的头像">
+					</div>
+					<div class="userinfo">
+						<span style="margin-left:0;">自定义昵称</span>
+					</div>
+				</div>	
+				
+				<div class="shareImg">
+					<i style=" background-position: -452px -286px;margin-top:13px;margin-left:10px;"></i>
+				</div>
+				
+				<div class="shareImg">
+					<i style=" background-position: -452px -312px;margin-top:13px;margin-left:14px;"></i>
+				</div>
+				
+				<div class="diamonds"></div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom_info">
+				<div class="user_bottom">
+					<div class="name">
+						<span>自定义昵称</span>
+					</div>
+				</div>
+				
+				<div class="fabulous">
+					<i style=" background-position: -451px 0;"></i>
+					<span class="num">1</span>
+				</div>
+				
+				<div class="userImg">
+					<img style="width:120px;height:120px;border-radius: 2px;margin:4px;" src="image/2.jpg" alt="您的头像">
+				</div>
+				
+				<div class="userImg_right">
+					<div class="userImg_right_top">
+						<span style="margin-left:0;">此处是个人简介</span>
+					</div>
+					<div class="userImg_right_down">
+						</div> -->
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				
+				<div class="info_menu">
+					<div class="menu_1" style="margin-left:80px;">
+						<a class="a_top" href="home.html">主页</a>
+					</div>
+					<div class="menu_1">
+						<a class="a_top" href="log.html">日志</a>
+					</div>
+
+					<div class="menu_1">
+						<a class="a_top" href="album.html">相册</a>
+						
+					</div>
+					<div class="menu_1" style="width:72px;">
+						<a class="a_top" href="message.html">留言板</a>
+					</div>
+					<div class="menu_1">
+						说说
+					</div>
+					<div class="menu_1" style="width:72px;">
+						个人档案
+					</div>
+					<div class="menu_1">
+						音乐
+					</div>
+					<div class="menu_1">
+						更多
+					</div>
+				</div>
+            </div>
+            <div class="bottom_block">
+				<div class="bottom_block_top">
+					<h3>写日志</h3>
+				</div>
+    <!-- 包裹整个日志编辑页内容的顶级容器 -->
+    <div class="blog-edit-container">
+        <div class="title">
+            <input type="text" placeholder="在此处输入标题">
+            <button>发布日志</button>
+        </div>
+        <demo-nav title="wangEditor default mode"></demo-nav>
+        <div class="page-container">
+          <div class="page-left">
+            <demo-menu></demo-menu>
+          </div>
+          <div class="page-right">
+            <!-- 编辑器 DOM -->
+            <div style="border: 1px solid #ccc;">
+              <div id="editor-toolbar" style="border-bottom: 1px solid #ccc;"></div>
+              <div id="editor-text-area" style="height: 500px"></div>
+            </div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+        <script>
+          const E = window.wangEditor
+      
+          // 切换语言
+          const LANG = location.href.indexOf('lang=en') > 0 ? 'en' : 'zh-CN'
+          E.i18nChangeLanguage(LANG)
+      
+          window.editor = E.createEditor({
+            selector: '#editor-text-area',
+            html: '<p><br></p>',
+            config: {
+              placeholder: '在这里写下你的日志吧...',
+              MENU_CONF: {
+                uploadImage: {
+                  fieldName: 'your-fileName',
+                  base64LimitSize: 10 * 1024 * 1024 // 10M 以下插入 base64
+                }
+              },
+              onChange(editor) {
+                console.log(editor.getHtml())
+      
+                // 选中文字
+                const selectionText = editor.getSelectionText()
+                document.getElementById('selected-length').innerHTML = selectionText.length
+                // 全部文字
+                const text = editor.getText().replace(/\n|\r/mg, '')
+                document.getElementById('total-length').innerHTML = text.length
+              }
+            }
+          })
+      
+          window.toolbar = E.createToolbar({
+            editor,
+            selector: '#editor-toolbar',
+            config: {}
+          })
+        </script>
+            </div>
+					
+					<div class="context" style="margin-top:0;">
+					</div>
+					<div class="context">
+						
+					</div>
+				</div>
+				<div class="bottom_right"></div>
+			</div>
+		</div>
+	</body>
+</html>

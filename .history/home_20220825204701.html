@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的空间-主页</title>
+		<link type="text/css" rel="stylesheet" href="text.css"/>
+	</head>
+	<body background="image/1.gif">
+		<!-- <div class="bg bg-blur"></div> -->
+		<div class="div_top" id="div_top">
+			<div class="top_menu">
+				<div class="top_1"></div>
+				<div class="top_2" style="margin-left:10px;">
+					<i style=" background-position: -452px -52px;"></i>
+					<a class="a_top" href="home.html">个人中心</a>
+				</div>
+				<div class="top_2" style="width:101px;">
+					<i style=" background-position: -452px -104px;"></i>
+					<a class="a_top">我的主页</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -78px;"></i>
+					<a class="a_top">好友</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -78px;"></i>
+					<a class="a_top" href="set.html">设置</a>
+				</div>
+				<div class="top_2" style="width:77px;">
+					<i  style=" background-position: -452px -130px;"></i>
+					<a class="a_top">游戏</a>
+				</div>
+				<div class="top_2"   style="width:77px;">
+					<i  style=" background-position: -452px -156px;"></i>
+					
+					<div class="top_list" id="dressUp">
+						<li><a class="a_top">装扮</a>
+							<ul class="top_list_menu" id="dressUp_content">
+								<li class="menu_color" id="color_default">默认</li>
+								<li class="menu_color" id="color_blue">蓝色</li>
+								<li class="menu_color" id="color_green">绿色</li>
+							</ul>
+						</li>
+
+					</div>
+				</div>
+				
+				<!-- <div class="music">
+					<div class="music_left">
+						<i style=" background-position: -452px -208px;margin:2px;"></i>
+					</div>
+					<div class="music_right">
+						<i></i>
+					</div>
+				</div> -->
+				
+				<div class="div_input">
+					<input type="text" placeholder="  用户/游戏/动态"/>
+					<!-- <i style="background-position: -452px -156px;"></i> -->
+				</div>
+				
+				<div class="img_info" >
+					<div class="imglogo">
+						<img style="width:24px;height:24px;border-radius: 2px;" src="image/2.jpg" alt="您的头像">
+					</div>
+					<div class="userinfo">
+						<span style="margin-left:0;">自定义昵称</span>
+					</div>
+				</div>	
+				
+				<div class="shareImg">
+					<i style=" background-position: -452px -286px;margin-top:13px;margin-left:10px;"></i>
+				</div>
+				
+				<div class="shareImg">
+					<i style=" background-position: -452px -312px;margin-top:13px;margin-left:14px;"></i>
+				</div>
+				
+				<div class="diamonds"></div>
+			</div>
+		</div>
+		<div class="bottom">
+			<!-- <img src="/Users/2531963162qq.com/Desktop/CODES/web/personal space/image/摄图网_401402466_唯美月球灯gif动图（非企业商用）.gif" alt="背景"> -->
+			<div class="bottom_info">
+				<div class="user_bottom">
+					<div class="name">
+						<span>自定义昵称</span>
+					</div>
+				</div>
+				
+				<div class="fabulous">
+					<i style=" background-position: -451px 0;"></i>
+					<span class="num">1</span>
+				</div>
+				
+				<div class="userImg">
+					<img id="myImg" style="width:120px;height:120px;border-radius: 2px;margin:4px;" src="image/2.jpg" alt="您的头像">
+					<!-- 弹窗 -->
+					<div id="myModal" class="modal">
+						<!-- 关闭按钮 -->
+						<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						<!-- 大图(弹窗内容） -->
+						<img class="modal_content" id="imgPlus" src="image/2.jpg" alt="大图">
+						<!-- 描述（点击更换头像) -->
+						<div id="caption"></div>
+					</div>
+				</div>
+				
+				<div class="userImg_right">
+					<div class="userImg_right_top">
+						<span style="margin-left:0;">此处是个人简介</span>
+					</div>
+					<div class="userImg_right_down">
+						<!-- <div class="userImg_right_down_1">
+							<img width=40 height=40 src="images/8.png"/>
+						</div> -->
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				
+				<div class="info_menu">
+					<div class="menu_1" style="margin-left:80px;">
+						主页
+					</div>
+					<div class="menu_1">
+						日志
+					</div>
+					<div class="menu_1">
+						相册
+					</div>
+					<div class="menu_1" style="width:72px;">
+						留言板
+					</div>
+					<div class="menu_1">
+						说说
+					</div>
+					<div class="menu_1" style="width:72px;">
+						个人档
+					</div>
+					<div class="menu_1">
+						音乐
+					</div>
+					<div class="menu_1">
+						更多
+					</div>
+				</div>
+			</div>
+			<div class="bottom_block">
+				<div class="bottom_left" id="bottom_left">
+					<div class="bottom_left_1">
+						<div class="bottom_left_1_list">
+							<i style="background-position: -478px -312px;"></i>
+							<div class="bottom_left_1_list_text" style="font-weight: bold;">
+								<a>好友动态</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -166px -52px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>特别关心</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -192px -104px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>与我相关</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -530px -130px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>空间达人</a>
+							</div>
+						</div>
+
+						<div class="bottom_left_1_list">
+							<i style="background-position: -504px -234px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>游戏应用</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position:-530px 0;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>我的收藏</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="bottom_left_1" style="margin-top:20px;">
+						<div class="bottom_left_1_list">
+							<i style="background-position: -478px -312px;"></i>
+							<div class="bottom_left_1_list_text" style="font-weight: bold;">
+								<a>好友动态</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -166px -52px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>特别关心</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -192px -104px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>与我相关</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position: -530px -130px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>空间达人</a>
+							</div>
+						</div>
+
+						<div class="bottom_left_1_list">
+							<i style="background-position: -504px -234px;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>游戏应用</a>
+							</div>
+						</div>
+						<div class="bottom_left_1_list">
+							<i style="background-position:-530px 0;"></i>
+							<div class="bottom_left_1_list_text">
+								<a>我的收藏</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom_middle">
+					<div class="bottom_middle_top" id="bottom_middle_top">
+						<div class="bottom_middle_top_input">
+							<a style="line-height:30px;margin-left:9px;"> 说点儿什么吧</a>
+							<!-- 点击跳转写说说界面 -->
+						</div>
+						<div class="camera">
+							<i style="background-position: -192px -260px;"></i>
+						</div>
+						<div class="camera" style="margin-left:0px;">
+							<i style="background-position:-192px -312px;"></i>
+						</div>
+					</div>
+					
+					<div class="bottom_middle_2">
+						<div class="bottom_middle_2_1">
+							<a style="line-height:30px;margin-left:9px;">全部动态</a>
+						</div>
+						<div class="bottom_middle_2_2">
+							<i style="background-position:-192px -52px;"></i>
+						</div>
+						<div class="bottom_middle_2_3">
+							<i style="background-position:-608px 0;margin-top:11px;"></i>
+						</div>
+						<div class="bottom_middle_2_4">
+							<i style="background-position:-608px -52px;margin-top:11px;"></i>
+						</div>
+					</div>
+					
+					<div class="context" style="margin-top:0;">
+						
+					</div>
+					<div class="context">
+						
+					</div>
+				</div>
+				<div class="bottom_right"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+			// 鼠标悬停变色
+				var stars = document.getElementsByTagName("li");
+				var div_color = document.getElementById("div_top").style.backgroundColor;
+				for(let i=0;i<stars.length;i++)
+				{
+					stars[i].onmouseover = function(){
+						stars[i].style.backgroundColor="LightSteelBlue";
+					}
+					stars[i].onmouseout = function(){
+						stars[i].style.backgroundColor=div_color;
+					}
+				}
+			// 点击头像弹出大图弹窗
+				var modal = document.getElementById('myModal');
+				// 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+				var img = document.getElementById('myImg');
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				
+				// 获取 <span> 元素，设置关闭按钮
+				var span = document.getElementsByClassName("close")[0];
+				
+				// 当点击 (x), 关闭弹窗
+				span.onclick = function() { 
+				modal.style.display = "none";
+				}
+
+			//装扮下拉菜单
+				document.getElementById("dressUp").onmouseover = function(){
+					document.getElementById("dressUp_content").style.display = 'block';
+				}
+				document.getElementById("dressUp").onmouseout = function(){
+					document.getElementById("dressUp_content").style.display = 'none';
+				}	
+				
+			// 装扮栏点击变色
+				// 默认颜色
+				var color1 = document.getElementById("color_default");
+				color1.onclick = function(){
+					div_color = "#010101";
+					document.getElementById("bottom_left").style.backgroundColor="#28272c";
+
+				}
+		</script>
+		
+	</body>
+</html>
