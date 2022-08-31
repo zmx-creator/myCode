@@ -412,9 +412,22 @@ hr{
 }
 
 .first_log{
-	width:500px;
-	height:100px;
+	width:900px;
+	height:150px;
 	float:left;
     /* color: #eceaf3; */
     background-color: #eceaf3;
+	margin-top: 20px;
+	margin-left: 45px;
+}
+.first_log_text{
+	line-height:30px;
+	margin-left:20px; 
+	border: none; 
+	outline: none;
+	color: #221d3b;
+	background-color:#eceaf3 ;
+	font-size: 18px;
+	width: 860px;
+	height: 130px;
 }
